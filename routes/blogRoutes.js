@@ -13,7 +13,7 @@ const BlogControllers = require("../controllers/blogController");
 
 
 async function blogRoutes(app) {
-    app.get("/getAllBlogs", await resolvedPromise(BlogControllers.getAllBlogs))
+    app.post("/getAllBlogs", await resolvedPromise(BlogControllers.getAllBlogs))
     app.post("/createBlog", await resolvedPromise(BlogControllers.createBlog))
 }
 
